@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LendX - Decentralized Cross-Chain Lending Platform
 
-## Getting Started
+LendX is a decentralized, cross-chain lending platform built on the Sui blockchain ecosystem that enables users to access stablecoins without selling their crypto holdings. The platform preserves long-term asset positions, avoids triggering taxable events, and leverages real-time data for robust risk management.
 
-First, run the development server:
+## 🌟 Key Features
+
+- **Cross-Chain Lending**: Access liquidity across multiple blockchain networks
+- **Asset Preservation**: Maintain crypto exposure while accessing stablecoins
+- **Real-Time Risk Management**: Dynamic pricing and collateral monitoring
+- **Tax Efficiency**: Avoid taxable events from asset liquidation
+- **High Performance**: Built on Sui blockchain for fast and secure operations
+
+## 🏗️ Architecture & Components
+
+### Core Technologies
+
+- **Sui Blockchain**: High-performance blockchain platform
+- **Pyth Network**: Real-time price feeds for accurate collateral valuation
+- **Wormhole**: Cross-chain asset interoperability
+- **Walrus**: Secure on-chain storage solution
+- **TwitterAIClient**: AI-powered social engagement and monitoring
+
+### System Components
+
+1. **Liquidity Providers (LPs)**
+
+   - Deposit stablecoins (e.g., USDC) into liquidity pools
+   - Earn interest from borrower repayments
+   - Automated interest accrual and fee management
+
+2. **Borrowers & Collateral Management**
+
+   - Lock crypto assets as collateral
+   - Access stablecoins without selling holdings
+   - Maintain long-term investment positions
+
+3. **Smart Contracts**
+   - Collateral management and liquidation
+   - Interest calculation and repayment
+   - Automated fee structure
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- MongoDB (for backend)
+- Sui CLI (for smart contract deployment)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-org/lendx.git
+cd lendx
+```
+
+2. Install frontend dependencies:
+
+```bash
+npm install
+```
+
+3. Install backend dependencies:
+
+```bash
+cd backend
+npm install
+```
+
+4. Set up environment variables:
+
+```bash
+# Frontend (.env.local)
+NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_SUI_NETWORK=testnet
+
+# Backend (.env)
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/lendx
+NODE_ENV=development
+```
+
+### Running the Application
+
+1. Start the backend server:
+
+```bash
+cd backend
+npm run dev
+```
+
+2. Start the frontend development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🔒 Security & Risk Management
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Real-time collateral monitoring via Pyth Network
+- Automated liquidation triggers
+- Secure cross-chain asset management through Wormhole
+- Immutable on-chain storage with Walrus
+- Regular security audits and compliance checks
 
-## Learn More
+## 📊 Use Cases
 
-To learn more about Next.js, take a look at the following resources:
+### For Borrowers
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Access liquidity without selling crypto assets
+- Maintain long-term investment positions
+- Tax-efficient borrowing
+- Flexible fund usage (yield farming, expenses)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### For Liquidity Providers
 
-## Deploy on Vercel
+- Earn attractive yields
+- Benefit from robust risk management
+- Participate in a growing ecosystem
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Technical Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Sui SDK
+
+### Backend
+
+- Node.js
+- Express
+- MongoDB
+- TypeScript
+
+### Blockchain
+
+- Sui
+- Pyth Network
+- Wormhole
+- Walrus
+
+## 📈 Future Enhancements
+
+- Expanded asset support
+- Enhanced user interface
+- Advanced analytics
+- Regulatory compliance updates
+- Additional blockchain integrations
+
+## 🤝 Contributing
+
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+For any queries or support, please reach out to our team at support@lendx.io
