@@ -1,0 +1,25 @@
+[package]
+name = "LendX"
+version = "0.1.0"
+published-at = "0x0"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+
+# External dependencies
+# These are configured to use the official package addresses when available
+# In a real deployment, these would be set to the correct package addresses after deployment
+
+# Mock dependencies for development
+# In production, these would be replaced with actual dependencies
+pyth_mock = { local = "./deps/pyth_mock" }
+wormhole_mock = { local = "./deps/wormhole_mock" }
+walrus_mock = { local = "./deps/walrus_mock" }
+
+[addresses]
+lending_core = "0x0"
+cross_chain_manager = "0x0"
+data_storage = "0x0"
+pyth_mock = "0x0"
+wormhole_mock = "0x0"
+walrus_mock = "0x0" 
